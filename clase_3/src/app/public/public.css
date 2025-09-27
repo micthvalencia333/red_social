@@ -1,0 +1,31 @@
+.example-card {
+  max-width: 400px;
+  margin-left: 30%;
+}
+
+.example-header-image {
+
+  background-size: cover;
+}
+.perfil-container {
+  width: 100%;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.perfil-barra {
+  display: flex;
+  align-items: center;
+  background: #df083e;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.foto-perfil {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 3px solid #ff8c61;
+}

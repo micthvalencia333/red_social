@@ -1,0 +1,38 @@
+<body>
+  <form (ngSubmit)="login()">
+    <div class="formulario">
+      <h2>INICIAR SESIÓN</h2>
+
+     
+      <input
+        type="text"
+        name="username"
+        id="username"
+        [(ngModel)]="username"
+        placeholder="Username"
+        required
+        class="input"
+        (input)="errorUsuario = ''"
+      />
+      <div *ngIf="errorUsuario" style="color: rgb(249, 83, 255); font-size: 14px;">
+        {{ errorUsuario }}
+      </div>
+
+      <input
+        type="password"
+        name="password"
+        id="password"
+        [(ngModel)]="password"
+        placeholder="Password"
+        required
+        class="input"
+        (input)="errorPassword = ''"
+      />
+      <div *ngIf="errorPassword" style="color: rgb(255, 87, 233); font-size: 14px;">
+        {{ errorPassword }}
+      </div>
+
+      <button type="login">Ingresar</button>
+    </div>
+  </form>
+</body>
